@@ -14,6 +14,7 @@ docker run -t \
   --name filebrowser \
   --restart unless-stopped \
   filebrowser
+docker start filebrowser
 ```
 
 ## Nginx passthrough
