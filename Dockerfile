@@ -5,7 +5,7 @@ RUN wget -q https://raw.githubusercontent.com/filebrowser/get/master/get.sh
 RUN bash get.sh
 RUN mkdir /storage
 RUN mkdir /config
+VOLUME ["/storage", "/config"]
 ADD filebrowser.json /config/
 EXPOSE 8080/tcp
-VOLUME ["/storage", "/config"]
 ENTRYPOINT ["/usr/local/bin/filebrowser", "-c", "/config/filebrowser.json"]
