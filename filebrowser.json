@@ -1,0 +1,10 @@
+{
+        "root": "/storage",
+        "baseURL": "",
+        "tlsKey": "",
+        "tlsCert": "",
+        "port": "8080",
+        "address": "0.0.0.0",
+        "log": "stdout",
+        "database": "/config/filebrowser.db"
+}
