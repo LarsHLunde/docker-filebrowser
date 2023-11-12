@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=/script/filebrowser.json
+FILE=/install/firstrun
 if test -f "$FILE"; then
     mv /script/filebrowser.json /config/.
     echo "Docker Filebrowser has been installed"
