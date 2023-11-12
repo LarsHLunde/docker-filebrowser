@@ -12,6 +12,7 @@ docker run -t \
   -v /storage:/storage \
   -p 8080:8080 \
   --name filebrowser \
+  --restart unless-stopped \
   filebrowser
 ```
 
