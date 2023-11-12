@@ -7,5 +7,5 @@ A debian based docker for filebrowser
 git clone https://github.com/LarsHLunde/docker-filebrowser.git
 cd docker-filebrowser
 docker build -t filebrowser .
-docker run -t -p 8080:8080/tcp --name filebrowser filebrowser
+docker run -it -p 8080:8080/tcp --name filebrowser filebrowser
 ```
