@@ -5,7 +5,9 @@ RUN wget -q https://raw.githubusercontent.com/filebrowser/get/master/get.sh
 RUN bash get.sh
 RUN mkdir /storage
 RUN mkdir /config
+RUN mkdir /script
 VOLUME ["/storage", "/config"]
-ADD filebrowser.json /config/
+ADD filebrowser.json /script/
+ADD init.sh /script/
 EXPOSE 8080/tcp
-ENTRYPOINT ["/usr/local/bin/filebrowser", "-c", "/config/filebrowser.json"]
+ENTRYPOINT ["/bin/bash", "/script/init.sh"]
