@@ -1,5 +1,4 @@
 # Docker Filebrowser
-## This docker does not work yet
 A debian based docker for filebrowser
 
 ## How to install
