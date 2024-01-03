@@ -14,7 +14,9 @@ docker run -t \
   --restart unless-stopped \
   filebrowser
 docker start filebrowser
-```
+```  
+**user : admin**  
+**pass : admin**  
 
 ## Nginx passthrough
 I assume you're not just running one application on the server.  
