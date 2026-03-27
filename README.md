@@ -16,7 +16,7 @@ docker run -t \
 docker start filebrowser
 ```  
 **user : admin**  
-**pass : admin**  
+**pass : administrator123**  
 
 ## Nginx passthrough
 I assume you're not just running one application on the server.  
