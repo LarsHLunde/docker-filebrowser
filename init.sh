@@ -4,7 +4,7 @@ FILE=/script/filebrowser.json
 if test -f "$FILE"; then
     mv /script/filebrowser.json /config/.
     /usr/local/bin/filebrowser --config /config/filebrowser.json config init
-    /usr/local/bin/filebrowser users add admin --password "administrator123" -d /config/filebrowser.db -c /config/filebrowser.json
+    /usr/local/bin/filebrowser users add admin administrator123 -d /config/filebrowser.db -c /config/filebrowser.json
     echo "Docker Filebrowser has been installed"
     echo "Start the docker the normal way and it will start normally"
     exit 0
