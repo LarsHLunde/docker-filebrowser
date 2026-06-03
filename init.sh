@@ -3,6 +3,7 @@
 FILE=/script/filebrowser.json
 if test -f "$FILE"; then
     mv /script/filebrowser.json /config/.
+    /usr/local/bin/filebrowser config init --auth.method=noauth --signup=false --port 8080 --address 0.0.0.0
     /usr/local/bin/filebrowser users update admin --password "administrator123" -d /config/filebrowser.db -c /config/filebrowser.json
     echo "Docker Filebrowser has been installed"
     echo "Start the docker the normal way and it will start normally"
